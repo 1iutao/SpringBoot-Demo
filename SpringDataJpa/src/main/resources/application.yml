@@ -1,0 +1,12 @@
+
+spring:
+  datasource:      #配置数据库源
+    url: jdbc:mysql://localhost:3306/demo?serverTimezone=UTC
+    username: root
+    password: 123456
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    show-sql: true       #打印sql
+    hibernate:               # Hibernate 配置内容，对应 HibernateProperties 类
+      ddl-auto: none
